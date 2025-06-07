@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 bg-white">
+    <header className="sticky top-0 bg-white z-30">
       {/* Top Bar */}
       <div className="bg-[#0A1D37] text-white">
         <Container className="flex flex-col md:flex-row items-center justify-between py-3 gap-4 md:gap-0">

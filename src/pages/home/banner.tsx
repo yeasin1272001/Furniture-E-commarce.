@@ -33,31 +33,12 @@ const Banner = () => {
 
   const banners = [banner2, banner3, banner4, banner1];
 
-  const previous = () => sliderRef.current?.slickPrev();
-  const next = () => sliderRef.current?.slickNext();
-
   return (
     <div
-      className="overflow-hidden bg-cover bg-center bg-fixed"
+      className="overflow-hidden bg-cover bg-center bg-fixed p-4"
       style={{ backgroundImage: `url(${bg.src})` }}
     >
       <Container className="slider-container relative">
-        {/* Navigation Buttons */}
-        <div className="absolute lg:top-[500px] top-64  md:left-10 z-10 flex gap-4 transform -translate-y-1/2 ">
-          <button
-            onClick={previous}
-            className="bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-700 transition duration-300"
-          >
-            <FaArrowCircleLeft size={25} />
-          </button>
-          <button
-            onClick={next}
-            className="bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-700 transition duration-300"
-          >
-            <FaArrowCircleRight size={25} />
-          </button>
-        </div>
-
         {/* Slider */}
         <Slider ref={sliderRef} {...settings}>
           {banners.map((banner, index) => (
