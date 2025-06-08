@@ -1,10 +1,10 @@
 import React from "react";
-import Container from "./container";
 import logo from "../images/logo.png";
 import Image from "next/image";
 import { FaRegHeart, FaSearch } from "react-icons/fa";
 import { FaCartShopping, FaUser } from "react-icons/fa6";
 import Link from "next/link";
+import Container from "@/components/container";
 
 const Header = () => {
   return (

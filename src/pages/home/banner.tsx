@@ -43,7 +43,7 @@ const Banner = () => {
         <Slider ref={sliderRef} {...settings}>
           {banners.map((banner, index) => (
             <div key={index}>
-              <div className="flex flex-col md:flex-row w-full items-center justify-between">
+              <div className="flex flex-col md:flex-row w-full h-[400px] items-center justify-between">
                 {/* Text Content */}
                 <div className="w-full md:w-1/2 px-4 md:px-8">
                   <Container className="">
