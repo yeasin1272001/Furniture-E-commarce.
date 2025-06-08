@@ -1,5 +1,6 @@
 import Banner from "@/pages/home/banner";
 import BestSeller from "@/pages/home/bestSeller";
+import LivingFurniture from "@/pages/home/livingFurniture";
 import NewArrival from "@/pages/home/newArrival";
 import ServicesTag from "@/pages/home/ServicesTag";
 import SpecialOffer from "@/pages/home/SpecialOffer";
@@ -13,6 +14,7 @@ const HomePage = () => {
       <BestSeller />
       <SpecialOffer />
       <NewArrival />
+      <LivingFurniture />
     </div>
   );
 };
