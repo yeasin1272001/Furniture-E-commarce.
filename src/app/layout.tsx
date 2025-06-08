@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/shared/header";
+import Footer from "@/shared/footer";
 
 export const metadata: Metadata = {
   title: "Furniture Web",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className={`antialiased`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

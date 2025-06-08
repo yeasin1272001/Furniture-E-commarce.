@@ -3,6 +3,7 @@ import React from "react";
 
 import img from "../../images/offer.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const SpecialOffer = () => {
   return (
@@ -31,9 +32,11 @@ const SpecialOffer = () => {
                 <p className="text-sm">Seconds</p>
               </div>
             </div>
-            <button className="bg-white text-black px-6 py-2 rounded">
-              shop now
-            </button>
+            <Link href={"/shop"}>
+              <button className="border border-gray-500 bg-orange-700 duration-500 text-white py-1 px-3 md:py-2 md:px-4 rounded-lg hover:bg-orange-400 hover:text-black transition">
+                Order Now
+              </button>
+            </Link>
           </div>
 
           {/* Right Side: Chair Image */}

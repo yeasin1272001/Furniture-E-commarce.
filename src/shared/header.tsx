@@ -17,7 +17,7 @@ const Header = () => {
             <Image src={logo} alt="logo" className="h-10 w-10 object-contain" />
             <div className="hover:duration-300">
               <h1 className="text-xl lg:text-2xl font-semibold text-[#FF6600] hover:text-[#FF6600]/90 duration-300 tracking-wide">
-                M2Market
+                Y2Market
               </h1>
               <p className="text-sm text-gray-300 hover:text-gray-100 duration-300">
                 Furniture Store
