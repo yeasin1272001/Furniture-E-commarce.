@@ -12,11 +12,11 @@ import img from "../../images/desk.png";
 
 const LivingFurniture = () => {
   return (
-    <div className="bg-gray-50 py-10">
-      <Container>
+    <div className=" py-10">
+      <Container className="">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
           {/* Left Section */}
-          <div className="lg:col-span-2 flex flex-col justify-center bg-[#E2F2B2] p-4">
+          <div className="lg:col-span-2 flex flex-col justify-center bg-[#E2F2B2] p-4 rounded-md">
             <h1 className="text-4xl lg:text-5xl font-bold tracking-wide text-slate-900">
               Living furniture you love
             </h1>
@@ -40,7 +40,7 @@ const LivingFurniture = () => {
 
           {/* Right Section */}
           <div className="lg:col-span-3">
-            <SectionTitle title="New Chairs Arrivals" />
+            <SectionTitle title="New Sofa Arrivals" />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
               {Living.map((product) => (
                 <div
